@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+}
+
+#first{
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo{
+    flex: 1;
+    font-family: Handjet;
+}
+
+.archive{
+    flex: 4;
+    font-family: Handjet;
+}
+
+.lang{
+    margin-left: auto;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+h1{
+    font-size:5rem;
+    margin-bottom: 0;
+    font-family: Iceberg;
+}
+
+.hr_1{
+    width:50%;
+    border:1px solid black;
+    margin-bottom:5%;
+}
+
+.inf{
+    max-width:90%;
+    letter-spacing:5%;
+    line-height: 1.5;
+}
+
+#container_img{
+    width: 45%;
+    display: flex;
+    align-items: flex-end;
+    gap: 2%;
+}
+
+#container_img img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#container_circle{
+    display: flex;
+    gap: 8%;
+    margin-top: 5%;
+}
+
+.circle{
+    width: 25%;
+    height: 1.3vh;
+    border-radius: 50%;
+    background: black;
+}
+
+#second{
+    
+}
