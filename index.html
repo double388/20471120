@@ -1,61 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Iceberg&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Iceberg&family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Iceberg&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Main</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="first">
-    <nav>
+      <nav>
         <span class="logo">20471120</span>
         <span class="archive">ARCHIVE</span>
         <span class="lang">🌐</span>
-    </nav>
-    <main>
+      </nav>
+      <main>
         <aside>
-            <h1>20471120</h1>
-            <hr class="hr_1">
-            <span class="inf">
-                Since designers Masahiro Nakagawa and Azechi Lica founded the label in 1992, 20471120 has been creating clothing rooted in a singular prophetic vision — the date November 20, 2047, when diversity and individual expression will have become the mainstream of fashion. Born from the Harajuku street scene and the subcultural energy of Tokyo, the brand developed a language of its own, drawing from anime, industrial music, and a playful futurism unbound by conventional fashion hierarchies. Central to the brand's identity is its mascot Hyoma — a child-like figure bearing a mischievous smile and graffiti on his face, embodying the label's irreverent belief in self-expression as a universal right. Though the label was discontinued in 2003, its vision of a world where creativity and individuality advance as rapidly as technology continues to resonate with designers and communities around the world today.
-            </span>
+          <h1>20471120</h1>
+          <hr class="hr_1" />
+          <span class="inf">
+            Since designers Masahiro Nakagawa and Azechi Lica founded the label
+            in 1992, 20471120 has been creating clothing rooted in a singular
+            prophetic vision — the date November 20, 2047, when diversity and
+            individual expression will have become the mainstream of fashion.
+            Born from the Harajuku street scene and the subcultural energy of
+            Tokyo, the brand developed a language of its own, drawing from
+            anime, industrial music, and a playful futurism unbound by
+            conventional fashion hierarchies. Central to the brand's identity is
+            its mascot Hyoma — a child-like figure bearing a mischievous smile
+            and graffiti on his face, embodying the label's irreverent belief in
+            self-expression as a universal right. Though the label was
+            discontinued in 2003, its vision of a world where creativity and
+            individuality advance as rapidly as technology continues to resonate
+            with designers and communities around the world today.
+          </span>
         </aside>
         <div id="container_img">
-            <img src="/images/runway_1.jpeg" alt="runway 1999">
-            <div class="controls">
-            <span>Look 01</span> 
-            <div id="container_circle">
-                <div class="circle"> </div>
-                <div class="circle"> </div>
-                <div class="circle"> </div>
-                <div class="circle"> </div>
-            </div>
+          <img id="slider_img" src="" alt="" />
+          <div class="controls">
+            <span id="look">Look 01</span>
+            <div id="container_circle"></div>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
     </div>
-    <hr>
+    <hr />
     <div id="second">
-        <header class="gallery">
-            <h2>MORE</h2>
-            <div class="line"></div>
-            <a href="#">VIEW ALL -></a>
-        </header>
-        <div id="grid" class="grid"></div>
+      <header class="gallery">
+        <h2>MORE</h2>
+        <div class="line"></div>
+        <a href="#">VIEW ALL -></a>
+      </header>
+      <div id="grid" class="grid"></div>
     </div>
-    <hr>
+    <hr />
     <div id="third">
-        <img src="" alt="">
-        <img src="" alt="">
+      <a href=""><img src="/images/runway_4.jpeg" alt="" /></a>
+      <a href=""><img src="/images/runway_5.jpeg" alt="" /></a>
     </div>
-</body>
-<script src="js/data.js"></script>
-<script src="js/gallery.js"></script>
+    <hr />
+    <footer>
+      <span class="foot">20471120</span>
+      <span class="foot">ARCHIVE 1994-2026</span>
+      <span class="foot">TOKYO, JAPAN</span>
+      <span class="foot">ALL RIGHTS RESERVED</span>
+     <button class="foot" id="plus">+</button>
+    </footer>
+    <div id="hide" onclick="show">
+        <h3>ABOUT</h3>
+        <h3>TRANSMISSION</h3>
+    </div>
+  </body>
+  <script src="js/footer.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/gallery.js"></script>
 </html>
