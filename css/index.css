@@ -3,7 +3,7 @@ body{
 }
 
 #first{
-    min-height: 100vh;
+    min-height: 98vh;
 }
 
 nav{
@@ -29,6 +29,8 @@ nav{
 main{
     display: flex;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
@@ -70,7 +72,6 @@ h1{
 
 #container_img img{
     width: 100%;
-    max-width: 500px;
     height: auto;
 }
 
@@ -83,17 +84,103 @@ h1{
 
 #container_circle{
     display: flex;
-    gap: 8%;
+    gap: 10%;
     margin-top: 5%;
 }
 
 .circle{
-    width: 25%;
-    height: 1.3vh;
+    width: 100%;
+    height: 1.2vh;
     border-radius: 50%;
     background: black;
 }
 
-#second{
-    
+#second {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10%;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 1.5rem;
+}
+
+.gallery h2{
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.line{
+    flex: 1;
+    height: 1px;
+    background: black;
+}
+
+.gallery a{
+    margin-right:10%;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:black;
+    letter-spacing: 0.05em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;        
+  min-height:0;  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.thumb {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  padding: 6px 8px;
+  flex-shrink: 0;
+  background-color: rgb(203, 203, 203);
+}
+
+.card-meta {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ 
+
+
+
+
+
+@media (max-width:1200px){
+    h1{
+        font-size: 3rem;
+    }
+    aside{
+        width: 50%;
+    }
+    #container_img{
+        width: 40%;
+    }
 }
