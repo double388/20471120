@@ -1,7 +1,7 @@
 const runways = [
     { img: "/images/runway_4.jpeg", alt: "runway/1999" },
     { img: "/images/runway_5.jpeg", alt: "runway/1999" },
-    { img: "/images/runway_6.jpeg", alt: "runway/1999" },
+    { img: "/images/runway_1.jpeg", alt: "runway/1999" },
     { img: "/images/runway_7.jpeg", alt: "runway/1990" },
     { img: "/images/runway_8.jpeg", alt: "runway/1999" }
 ];
@@ -31,10 +31,14 @@ function updateCircles() {
 }
 
 function ShowImgScroll() {
+    img.classList.add("animation");
+    setTimeout(() => {
     img.src = runways[current].img;
     img.alt = runways[current].alt;
 
+    img.classList.remove("animation");
     updateCircles();
+    }, 600);
 }
 
 CreateCircles();
