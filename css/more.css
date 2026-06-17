@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2%;
+    font-size: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color:black;
+}
+
+header select{
+    font-size: 15px;
+    border: none;
+}
+
+header hr{
+   position: absolute;
+   width:25%;
+   top:12%;
+   left: 37%;
+}
+
+header h1{
+  font-family: Host Grotesk;
+  font-size: 50px;
+}
+
+main{
+  height:350vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom:30%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding:5%;      
+  gap:5%; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb {
+  border:0.5px solid rgb(145, 145, 145);
+  border-bottom: none;
+  flex: 1;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  border:0.5px solid rgb(145, 145, 145);
+  border-top: none;
+  padding: 6px 8px;
+  flex-shrink: 0;
+  background-color: rgb(239, 239, 239);
+}
+
+.card-meta {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
