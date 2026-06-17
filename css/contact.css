@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+    .logo{
+        flex: 1;
+        font-family: Handjet;
+    }
+
+.archive{
+    flex: 4;
+    font-family: Handjet;
+}
+
+.lang{
+    background-color: white;
+    border:none;
+    height:4vh;
+    margin-left: auto;
+}   
+
+footer{
+    margin-right:5%;
+    margin-left:5%;
+    display: flex;
+    justify-content: space-between;
+    height:5vh;
+}
+
+#plus{
+    cursor: pointer;
+}
+
+#plus::before {
+    content: "+";
+}
+
+#plus.open::before {
+    content: "-";
+}
+
+.foot{
+    background-color: white;
+    border: none;
+     height:5vh;
+    font-family:Handjet;
+    font-size: 1.5rem;
+}
+
+#hide{
+    display: flex;
+    justify-content: center;
+    gap:40%;
+    height:5vh;
+}
+
+#hide h3{
+    height:5vh;
+    font-family: Imbue;
+}

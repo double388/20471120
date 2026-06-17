@@ -23,6 +23,7 @@ header span{
 header a{
     color:black;
     text-decoration: none;
+    cursor:pointer;
 }
 
 main{
@@ -35,7 +36,6 @@ main{
     width: 45%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     padding: 5%;
 }
 

@@ -40,7 +40,6 @@ if(item){
     document.querySelector(".added").textContent = item.date;
     document.querySelector("#text").textContent = item.description;
 
-/*
     const bigImg = document.querySelector("#big img");
     const small_1 = document.querySelector(".view_1");
     const small_2 = document.querySelector(".view_2");
@@ -48,47 +47,37 @@ if(item){
     const small_4 = document.querySelector(".view_4");
     
     document.querySelector(".view_1").addEventListener('click', () => {
-        if(bigImg.src.includes(item.img)){
+        if(!small_1.src.includes("placeholder.jpg") || !small_2.src.includes("placeholder.jpg") || !small_3.src.includes("placeholder.jpg") || !small_4.src.includes("placeholder.jpg")){
             bigImg.src = item.view_1;
-            small_1.src = item.img;
-        }
-        else{
-            bigImg.src = item.img;
-            small_1.src = item.view_1;
-        }
+    }
     })
 
     document.querySelector(".view_2").addEventListener('click', () => {
-                 if(bigImg.src.includes(item.img)){
+        if(!small_1.src.includes("placeholder.jpg") || !small_2.src.includes("placeholder.jpg") || !small_3.src.includes("placeholder.jpg") || !small_4.src.includes("placeholder.jpg")){
             bigImg.src = item.view_2;
-            small_2.src = item.img;
-        }
-        else{
-            bigImg.src = item.img;
-            small_2.src = item.view_2;
-        }
+        
+    }
     })
 
     document.querySelector(".view_3").addEventListener('click', () => {
-                 if(bigImg.src.includes(item.img)){
-            bigImg.src = item.view_3;
-            small_3.src = item.img;
-        }
-        else{
-            bigImg.src = item.img;
-            small_3.src = item.view_3;
-        }
+        if(!small_1.src.includes("placeholder.jpg") || !small_2.src.includes("placeholder.jpg") || !small_3.src.includes("placeholder.jpg") || !small_4.src.includes("placeholder.jpg")){
+            bigImg.src = item.view_3
+    }
     })
 
     document.querySelector(".view_4").addEventListener('click', () => {
-        if(bigImg.src.includes(item.img)){
-            bigImg.src = item.view_4;
-            small_4.src = item.img;
-        }
-        else{
-            bigImg.src = item.img;
-            small_4.src = item.view_4;
+        if(!small_1.src.includes("placeholder.jpg") || !small_2.src.includes("placeholder.jpg") || !small_3.src.includes("placeholder.jpg") || !small_4.src.includes("placeholder.jpg")){
+        bigImg.src = item.view_4
         }
     })
-*/
+}
+
+
+function Back(){
+    if(id <= 6){
+    location.href = "index.html";
+    }
+    else{
+        location.href = "more.html";
+    }
 }
